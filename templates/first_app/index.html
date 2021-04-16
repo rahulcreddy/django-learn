@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>First App</title>
+        <title>Personal Profile Pic</title>
+        <link rel = "stylesheet" href="{% static 'css/mystyle.css' %}"/>
     </head>
     <body>
-        <h1>Hello this is Index.html</h1>
-        <p>Content below is from app view</p>
-        {{ insert_me }} <!-- App View -->
+        <h1>Hello this is a profile picutre</h1>
+        <img src="{% static 'images/check.jpg' %}" alt="Uh Oh, image cannot be loaded!">
     </body>
 </html>
